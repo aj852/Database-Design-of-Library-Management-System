@@ -8,7 +8,7 @@ CREATE TABLE Books (
   Type VARCHAR(15),
   Publication_Year YEAR NOT NULL
   );
-  CREATE TABLE Authors (
+CREATE TABLE Authors (
   Book_ID INT NOT NULL PRIMARY KEY,
   Author_Name VARCHAR(20) NOT NULL,
   Author_Email VARCHAR(20) NOT NULL,
@@ -61,13 +61,13 @@ CREATE TABLE Loans (
   FOREIGN KEY (Employee_ID) REFERENCES Employees(Employee_ID)
 );
 CREATE TABLE Genres(
-Title VARCHAR(50) NOT NULL,
-Genre VARCHAR(10) NOT NULL,
-PRIMARY KEY (Title)
+  Title VARCHAR(50) NOT NULL,
+  Genre VARCHAR(10) NOT NULL,
+  PRIMARY KEY (Title)
 );
 
 CREATE TABLE TYPES(
-Genre VARCHAR(10) NOT NULL,
-Type VARCHAR(15) not null,
-PRIMARY KEY (Genre)
+  Genre VARCHAR(10) NOT NULL,
+  Type VARCHAR(15) not null,
+  PRIMARY KEY (Genre)
 );
